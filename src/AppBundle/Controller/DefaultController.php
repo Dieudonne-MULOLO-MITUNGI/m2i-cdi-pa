@@ -9,7 +9,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/")
+     * @Route("/", name="homepage")
      */
     public function indexAction()
     {
