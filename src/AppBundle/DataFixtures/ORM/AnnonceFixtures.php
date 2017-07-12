@@ -26,12 +26,42 @@ class AnnonceFixtures extends AbstractFixture
     public function load(ObjectManager $manager)
     {
        $Annonce = new Annonce();
-       $Annonce->setTitre("maison avendre")
-                ->setPrix(10200)
+       $Annonce->setTitre("Maison de campagne")
+                ->setPrix(22000)
                 ->setCodepostal(59500);
         $manager->persist($Annonce);
-       $manager->flush();
+        $manager->flush();
 
+        $Annonce = new Annonce();
+        $Annonce->setTitre("location Appartement")
+            ->setPrix(600)
+            ->setCodepostal(62100);
+        $manager->persist($Annonce);
+        $manager->flush();
+
+        $Annonce = new Annonce();
+        $Annonce->setTitre("local commercial")
+            ->setPrix(10200)
+            ->setCodepostal(51300);
+        $manager->persist($Annonce);
+        $manager->flush();
+
+
+        $Annonce = new Annonce();
+        $Annonce->setTitre("maison avendre")
+            ->setPrix(10200)
+            ->setCodepostal(59500);
+        $manager->persist($Annonce);
+        $manager->flush();
+
+        $Annonce = new Annonce();
+        $Annonce->setTitre("maison avendre")
+            ->setPrix(10200)
+            ->setCodepostal(59500);
+        $manager->persist($Annonce);
+
+
+        $manager->flush();
     }
 
     /**

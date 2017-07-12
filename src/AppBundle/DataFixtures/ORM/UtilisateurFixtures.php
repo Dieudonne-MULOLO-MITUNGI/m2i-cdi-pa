@@ -37,6 +37,27 @@ class UtilisateurFixtures extends AbstractFixture
             $manager->flush();
 
 
+            $Utilisateur = new Utilisateur();
+
+            $Utilisateur->setNom("Tito")
+                ->setEmail("tito@yahoo.fr")
+                ->setPassword(1234);
+            $manager->persist($Utilisateur);
+
+            $manager->flush();
+
+            $Utilisateur = new Utilisateur();
+
+            $Utilisateur->setNom("François")
+                ->setEmail("françois@hotmail.fr")
+                ->setPassword(1234);
+            $manager->persist($Utilisateur);
+
+            $manager->flush();
+
+
+
+
 
         }
     }
