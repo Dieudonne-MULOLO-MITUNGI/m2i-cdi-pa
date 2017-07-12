@@ -14,10 +14,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="">Consulter les Annonces</a></li>
+                <li><a href="{{ path('inscription') }}">Inscription</a></li>
+                <li><a href="{{ path('consulter_annonces') }}">Consulter les Annonces</a></li>
                 <li><a href="">Annonces par code postal</a></li>
                 <li><a href="">Annonces par prix</a></li>
-                <li><a href="">Ajouter une Annonce</a></li>
+                <li><a href="{{ path('add_annonce') }}">Ajouter une Annonce</a></li>
+
 
 
             </ul>

@@ -9,7 +9,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/", name="homepage")
+     * @Route("/annonces-index", name="consulter_annonces")
      */
     public function indexAction()
     {
